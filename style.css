@@ -1,3 +1,19 @@
+:root{
+    --vinotinto: #a53860;
+    --pink: #da627d;
+    --rosa: #ffa5ab;
+    --yellow: #f9dbbd;
+    --white:#FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +29,7 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #333;
+    background-color: var(--yellow);
     color: white;
     padding: 20px;
     position: fixed;
