@@ -1,9 +1,9 @@
-:root{
+:root {
     --vinotinto: #a53860;
     --pink: #da627d;
     --rosa: #ffa5ab;
     --yellow: #f9dbbd;
-    --white:#FFFFFF;
+    --white: #FFFFFF;
     --black: #000000;
     --dark: #232830;
     --sm: 14px;
@@ -33,21 +33,21 @@ header {
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     padding: 1rem;
     background-color: var(--black);
-  
+
 }
 
 
-header .encabezado h1{
-color: #da627d;
-font-family:cursive;
-font-size: 25px;
+header .encabezado h1 {
+    color: #da627d;
+    font-family: cursive;
+    font-size: 25px;
 }
 
-.main{
+.main {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -89,7 +89,7 @@ aside {
 .profile h2 {
     font-size: 20px;
     margin-bottom: 30px;
-    color:var(--white);
+    color: var(--white);
     font-size: var(--lg);
 }
 
@@ -97,16 +97,16 @@ nav ul {
     list-style-type: none;
     text-decoration: none;
     font-size: var(--md);
-  
+
 }
 
 nav ul li {
     margin-bottom: 15px;
-    
+
 }
 
 nav ul li a {
-    color:var(--white);
+    color: var(--white);
     text-decoration: none;
     font-size: 18px;
 }
@@ -121,7 +121,7 @@ nav ul li a:hover {
 }
 
 .social a {
-    color:var(--white);
+    color: var(--white);
     text-decoration: none;
     font-size: 18px;
     display: block;
@@ -159,7 +159,7 @@ nav ul li a:hover {
 
 .projects {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
     flex-wrap: wrap;
     width: 100%;
     height: 10;
@@ -177,15 +177,16 @@ nav ul li a:hover {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .project h3 {
-    font-size: 20px;
+    font-size:var(--md);
     margin-bottom: 10px;
 }
 
 .project p {
-    font-size: 16px;
+    font-size:var(--sm);
     margin-bottom: 10px;
 }
 
@@ -206,7 +207,8 @@ nav ul li a:hover {
     }
 
     .content {
-        margin-left: 220px; /* Ajuste menor para compensar el ancho más pequeño de la barra lateral */
+        margin-left: 220px;
+        /* Ajuste menor para compensar el ancho más pequeño de la barra lateral */
     }
 
     .projects {
@@ -214,7 +216,8 @@ nav ul li a:hover {
     }
 
     .project {
-        width: 100%; /* Los proyectos ocupan todo el ancho disponible */
+        width: 100%;
+        /* Los proyectos ocupan todo el ancho disponible */
         margin-bottom: 20px;
     }
 }
@@ -227,7 +230,8 @@ nav ul li a:hover {
 
     .sidebar {
         width: 100%;
-        height: auto; /* La barra lateral se ajusta a la parte superior */
+        height: auto;
+        /* La barra lateral se ajusta a la parte superior */
         position: relative;
     }
 
