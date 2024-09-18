@@ -3,7 +3,7 @@
     --azul-claro: #00b4d8;
     --azul-mas-claro: #90e0ef;
     --super-claro: #caf0f8;
-    --naranja:#FFA500;
+    --naranja:#ff5400;
     --white: #FFFFFF;
     --black: #000000;
     --dark: #232830;
@@ -30,6 +30,7 @@ body {
 
 header {
     position: fixed;
+    z-index: 1;
     top: 0;
     width: 100%;
     height: 100px;
@@ -183,7 +184,7 @@ h1 {
     height: 50px;
     margin: 0;
     padding: 0;
-    background-color: #FFA500;
+    background-color: #ff5400;
     font-size:var(--md);
     border-bottom: 2px solid #d62828;
     border-radius: 10px;
@@ -203,12 +204,9 @@ h1 {
 text-align:justify;
 }
 
-a.enlace-naranja {
-    color: var(--naranja);
-}
 
 .project:hover {
-    transform: translateY(-10px);
+   transform: translateY(-10px);
   }
 
 .project img {
