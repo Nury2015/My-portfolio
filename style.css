@@ -3,6 +3,7 @@
     --azul-claro: #00b4d8;
     --azul-mas-claro: #90e0ef;
     --super-claro: #caf0f8;
+    --rosa-oscuro: #f8bfcd;
     --naranja:#ff5400;
     --white: #FFFFFF;
     --black: #000000;
@@ -18,7 +19,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700px;
+    font-style: normal;
 }
 
 body {
@@ -27,7 +31,9 @@ body {
     justify-content: flex-start;
     margin: 0;
     padding: 0;
-}
+    
+    }
+
 
 header {
     position: fixed;
@@ -42,7 +48,6 @@ header {
     padding: 1rem;
     background-color: var(--azul-mas-claro);
 }
-
 
 
  h1 {
@@ -68,8 +73,6 @@ header {
     font-size: var(--lg);
 }
 
-
-
 nav ul {
 
     gap: 20px;
@@ -91,7 +94,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f4f4f4;
+    color: var(--azul-claro);
     text-decoration: underline;
 }
 
@@ -119,11 +122,10 @@ nav ul li a:hover {
     text-decoration: none;
     margin-bottom: 0;
    
-  
 }
 
 .social a:hover {
-    color: #ccc;
+    color:var(--azul-claro);
     transform: translateY(-10px);
 }
 
@@ -175,10 +177,16 @@ nav ul li a:hover {
 text-align:justify;
 }
 
+.contenido a:hover{
+    color: #ffd9d9;
+    cursor: pointer;
+    
+}
+
 .project {
   
     background-color:#f5ebe0;
-    width: 300px;
+    width: 360px;
     border-radius: 20px;
     box-shadow: 4px 3px 10px 0 rgba(0, 0, 0, 0.2);
     border: 2px solid var(--azul-oscuro);
@@ -189,11 +197,10 @@ text-align:justify;
 
 .project img {
     width: 100%;
-    height: 200px;
+    height: 280px;
     overflow: hidden;
-    border-radius: 5px;
     object-fit: cover;
-    border: 1px solid var(--azul-claro);
+
 }
 
 .project p {
@@ -210,6 +217,36 @@ text-align:justify;
 .project a:hover {
     text-decoration: underline;
 }
+
+.boton-git{
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 60px;
+
+}
+
+.boton-personalizado {
+
+    background-color:var(--rosa-oscuro); 
+    border: none;
+    color: white;
+    padding: 15px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 3px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.boton-personalizado:hover {
+    background-color:var();
+}
+
 
 
 
