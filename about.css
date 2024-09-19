@@ -3,7 +3,7 @@
     --azul-claro: #00b4d8;
     --azul-mas-claro: #90e0ef;
     --super-claro: #caf0f8;
-
+}
 
 body {
    
@@ -136,6 +136,6 @@ footer {
     font-size: 16px;
 }
 
-.footer-links a:hover {
+.footer-links a:hover{
     text-decoration: underline;
 }
