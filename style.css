@@ -1,8 +1,8 @@
 :root {
-    --amarillo: #ffe6b8;
-    --cafe-claro: #efe0d8;
-    --dorado: #efb810;
-    --dorado-oscuro: #fdc425;
+    --azul-oscuro: #03045e;
+    --azul-claro: #00b4d8;
+    --azul-mas-claro: #90e0ef;
+    --super-claro: #caf0f8;
     --naranja:#ff5400;
     --white: #FFFFFF;
     --black: #000000;
@@ -39,8 +39,7 @@ header {
     margin-left: 250px;
     align-items: center;
     padding: 1rem;
-    background-color: #a8b4b3;
-    border-bottom: 3px solid #a9fff8;
+    background-color: var(--azul-mas-claro);
 }
 
 
@@ -51,10 +50,6 @@ header .encabezado h1 {
     font-size: 25px;
     
 }
-h1 {
-    margin-bottom: 20px;
-}
-
 
 
 .main {
@@ -66,7 +61,7 @@ h1 {
 aside {
     width: 250px;
     /* background-image: url('https://img.freepik.com/premium-photo/illustration-cyberpunk-abstract-background-generation-ai_201606-6161.jpg'); */
-    background-color: #ebf9f7;
+    background-color: var(--azul-oscuro);
     color: var(--black);
     padding: 20px;
     position: fixed;
@@ -83,11 +78,10 @@ aside {
     margin: 100px auto 0 250px;
     padding: 20px;
     /* background-image: url('https://img.freepik.com/premium-photo/pink-blue-neon-geometric-ai-generated-metal-pattern_151150-24077.jpg'); */
-    background-color:#d7f2ef;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* background-size: cover;
+    background-color: var(--super-claro);
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     width: calc(100% - 250px);
 }
 
@@ -101,7 +95,7 @@ aside {
 .profile h2 {
     font-size: 20px;
     margin-bottom: 30px;
-    color: var(--black);
+    color: var(--white);
     font-size: var(--lg);
 }
 
@@ -118,7 +112,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
     font-size: 18px;
 }
@@ -156,14 +150,19 @@ nav ul li a:hover {
 }
 
 
+h1 {
+    margin-bottom: 20px;
+}
+
+
 .titulo{
     width:100%;
     height: 50px;
     margin: 0;
     padding: 5px;
-    background-color:#a8b4b3;
+    background-color: #ff5400;
     font-size:var(--md);
-    border-bottom: 5px solid var(--);
+    border-bottom: 2px solid #d62828;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid var(--white);
@@ -183,6 +182,7 @@ text-align:justify;
     color: #c59595;
     cursor: pointer;
     text-decoration:none;}
+    
 
 
 
