@@ -250,64 +250,20 @@ text-align:justify;
     width: 100%;
     height: 10;
 } */
-
 @media (max-width: 768px) {
-    .sidebar {
-        width: 200px;
-    }
-
-    .content {
-        margin-left: 220px;
-        /* Ajuste menor para compensar el ancho más pequeño de la barra lateral */
-    }
-
-    .projects {
-        display: block;
-    }
-
-    .project {
-        width: 100%;
-        /* Los proyectos ocupan todo el ancho disponible */
-        margin-bottom: 20px;
-    }
-}
-
-/* Para pantallas de móviles (ancho máximo de 600px) */
-@media (max-width: 600px) {
     body {
-        flex-direction: column;
+        flex-direction: row;
     }
 
-    .sidebar {
-        width: 100%;
-        height: auto;
-        /* La barra lateral se ajusta a la parte superior */
-        position: relative;
-    }
-
-    .content {
-        margin-left: 0;
+    header {
+        width: 200px;
+        height: 100vh; 
+        text-align: left;
         padding: 10px;
     }
 
-    .projects {
-        display: block;
-    }
-
-    .project {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .filter button {
-        padding: 8px 15px;
-    }
-
-    .profile h2 {
-        font-size: 18px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
+    main {
+        flex: 1;
+        padding: 10px;
     }
 }
