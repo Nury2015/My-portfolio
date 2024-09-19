@@ -1,8 +1,8 @@
 :root {
-    --azul-oscuro: #03045e;
-    --azul-claro: #00b4d8;
-    --azul-mas-claro: #90e0ef;
-    --super-claro: #caf0f8;
+    --amarillo: #ffe6b8;
+    --cafe-claro: #efe0d8;
+    --dorado: #efb810;
+    --dorado-oscuro: #fdc425;
     --naranja:#ff5400;
     --white: #FFFFFF;
     --black: #000000;
@@ -39,7 +39,8 @@ header {
     margin-left: 250px;
     align-items: center;
     padding: 1rem;
-    background-color: var(--azul-mas-claro);
+    background-color: #a8b4b3;
+    border-bottom: 3px solid #a9fff8;
 }
 
 
@@ -50,6 +51,10 @@ header .encabezado h1 {
     font-size: 25px;
     
 }
+h1 {
+    margin-bottom: 20px;
+}
+
 
 
 .main {
@@ -61,18 +66,13 @@ header .encabezado h1 {
 aside {
     width: 250px;
     /* background-image: url('https://img.freepik.com/premium-photo/illustration-cyberpunk-abstract-background-generation-ai_201606-6161.jpg'); */
-    background-color: var(--azul-oscuro);
+    background-color: #ebf9f7;
     color: var(--black);
     padding: 20px;
     position: fixed;
     height: 100vh;
     left: 0;
 }
-
-
-
-
-
 
 .content {
     display: flex;
@@ -83,10 +83,11 @@ aside {
     margin: 100px auto 0 250px;
     padding: 20px;
     /* background-image: url('https://img.freepik.com/premium-photo/pink-blue-neon-geometric-ai-generated-metal-pattern_151150-24077.jpg'); */
-    background-color: var(--super-claro);
-    background-size: cover;
+    background-color:#d7f2ef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     width: calc(100% - 250px);
 }
 
@@ -100,7 +101,7 @@ aside {
 .profile h2 {
     font-size: 20px;
     margin-bottom: 30px;
-    color: var(--white);
+    color: var(--black);
     font-size: var(--lg);
 }
 
@@ -117,14 +118,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--white);
+    color: var(--black);
     text-decoration: none;
     font-size: 18px;
 }
 
 nav ul li a:hover {
-    color: #f4f4f4;
-    text-decoration: underline;
+    color: #c59595;
+    text-decoration: none;
 }
 
 .social{
@@ -136,7 +137,7 @@ nav ul li a:hover {
     margin-top: 50px;
     width: 40px;
     height: 40px;
-    background-color: var(--azul-oscuro);
+    background-color: var(--azul-mas-claro);
     border-radius: 50%;
 }
 
@@ -150,73 +151,48 @@ nav ul li a:hover {
 }
 
 .social a:hover {
-    color: #ccc;
+    color: #c59595;
+    transform: translateY(-10px);
 }
 
 
-
-
-h1 {
-    margin-bottom: 20px;
-}
-
-.filter {
-    margin-bottom: 20px;
-}
-
-.filter button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-}
-
-.filter button.active,
-.filter button:hover {
-    background-color: #555;
-}
-
-/* .projects {
+.titulo{
+    width:100%;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+    background-color:#a8b4b3;
+    font-size:var(--md);
+    border-bottom: 5px solid var(--);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--white);
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 10;
-} */
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+ padding: 15px;
+ margin-top: 0;
+ border-top: 1px solid var(--white);
+text-align:justify;
+}
+
+.contenido a:hover{
+    color: #c59595;
+    cursor: pointer;
+    text-decoration:none;}
+
+
+
 .project {
   
     background-color:#f5ebe0;
     width: 300px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 7px solid var(--azul-oscuro);
-} 
-.titulo{
-    width:100%;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    background-color: #ff5400;
-    font-size:var(--md);
-    border-bottom: 2px solid #d62828;
-    border-radius: 10px;
-    overflow: hidden;
-    border-left: 2px solid var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.contenido {
- padding: 15px;
- margin-top: 0;
- border-top: 2px solid var(--white);
-text-align:justify;
-}
+    border: 4px solid var(--azul-oscuro);} 
 
 
 .project:hover {
@@ -249,6 +225,31 @@ text-align:justify;
 
 
 
+/* .filter {
+    margin-bottom: 20px;
+}
+
+.filter button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.filter button.active,
+.filter button:hover {
+    background-color: #555;
+} */
+
+/* .projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10;
+} */
 
 @media (max-width: 768px) {
     .sidebar {
