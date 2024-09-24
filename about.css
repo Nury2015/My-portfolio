@@ -55,6 +55,7 @@ main{
 
 .descripcion {
     flex: 1;
+    text-align: justify;
 }
 
 .descripcion h1 {
@@ -94,10 +95,10 @@ main{
     text-decoration: none;
     color: #007bff;
     font-size: 18px;
-    border: 1px solid #007bff;
+    border: transparent;
     border-radius: 5px;
-    padding: 10px;
-    transition: background-color 0.3s, color 0.3s;
+    padding:10px;
+    transition:background-color 0.3s, color 0.3s;
 }
 
 .contacto-link:hover {
@@ -138,4 +139,62 @@ footer {
 
 .footer-links a:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+   
+    .container {
+        display: grid;
+        grid-template-rows: auto auto; /* Dos filas, una para la imagen y otra para el texto */
+        justify-items: center; /* Centra los elementos horizontalmente */
+        margin: 10px;
+    }
+    
+    .foto {
+        width: 200px; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+    }
+    
+    .descripcion {
+        max-width: 800px; /* Limita el ancho del texto */
+        text-align: justify;
+    }
+
+    
+   .contacto{
+    margin: 10px;
+   }
+ 
+    .contacto-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto-link {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .contacto-links {
+        flex-direction: column;
+    }
+
+    .contacto-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto-icon {
+        width: 30px;
+        height: 30px;
+    }
 }
